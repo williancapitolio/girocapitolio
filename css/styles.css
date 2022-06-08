@@ -1,0 +1,112 @@
+:root {
+    --fontPrimaryColor: #050505;
+    --fontSecondaryColor: #FFF;
+    --fontTertiaryColor: #535353;
+
+    --bgPrimaryColor: #FAFAFA;
+    --bgSecondaryColor: #ece8e2;
+    --bgDark: #050505;
+
+    --fontDefault: 'Ubuntu', Verdana, Arial;
+}
+
+* {
+    font-family: var(--fontDefault);
+    background-color: var(--bgPrimaryColor);
+}
+
+.header .navbar {
+    border-bottom: 1px solid #535353;
+    background-color: var(--bgDark);
+    width: 100vw;
+    position: fixed;
+    margin-top: 0px;
+}
+
+.header .navbar .menuNav {
+    background-color: var(--bgDark);
+}
+
+.menuNavActive {
+    overflow: hidden;
+}
+
+.header .navbar .menuNav .menuMobile {
+    background-color: var(--bgDark);
+    color: var(--fontSecondaryColor);
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.header .navbar .giroLogo {
+    background-color: var(--bgDark);
+    text-decoration: none;
+    color: var(--bgPrimaryColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .navbar .giroLogo:hover {
+    text-decoration: underline;
+}
+
+.header .navbar .menuNav .giroLogo figure {
+    background-color: var(--bgDark);
+}
+
+.header .navbar .menuNav .giroLogo figure img {
+    width: 2.5em;
+    position: relative;
+    margin-top: 50%;
+}
+
+.header .navbar .menuNav .giroLogo span {
+    background-color: var(--bgDark);
+    padding-left: 0.5em;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.header .navbar .menuNav .menuNavItems {
+    background-color: var(--bgDark);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.header .navbar .menuNav .menuNavItems .menuNavItemsNav {
+    background-color: var(--bgDark);
+    display: flex;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header .navbar .menuNav .menuNavItems .menuNavItemsContents {
+    background-color: var(--bgDark);
+}
+
+.header .navbar .menuNav .menuNavItems .menuNavItemsContents .menuNavItemsContentsLink {
+    background-color: var(--bgDark);
+    text-decoration: none;
+    color: var(--bgPrimaryColor);
+    margin: 0 1em;
+    font-weight: 700;
+}
+
+.header .navbar .menuNav .menuNavItems .menuNavItemsContents .menuNavItemsContentsLink:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    .header .navbar .menuNav .menuMobile {
+        display: none;
+    }
+
+    .header .navbar .menuNav .menuNavItems {
+        display: flex;
+    }
+}
