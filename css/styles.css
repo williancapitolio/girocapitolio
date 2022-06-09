@@ -167,11 +167,13 @@ body {
 .secondConentSecondIcon {
     color: var(--fontSecondaryColor);
     font-size: 2em;
+    text-shadow: 4px 4px 10px #000;
 }
 
 .secondConentSecondLink {
     text-decoration: none;
     color: var(--fontSecondaryColor);
+    text-shadow: 4px 4px 10px #000;
 }
 
 .secondConentSecondLink:hover {
