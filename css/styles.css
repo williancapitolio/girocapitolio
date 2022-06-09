@@ -29,7 +29,6 @@ body {
     width: 100vw;
     position: fixed;
     margin-top: 0px;
-    
 }
 
 .navBranding {
@@ -119,21 +118,63 @@ body {
     }
 }
 
-/*
-.imgBg {
-    margin-top: 122px;
-    height: 100%;
-    width: 100%;
-}
-*/
-
-.bgImg {
+.firstContent {
+    background-image: url("../img/giro-bg.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-
-    margin-top: 122px;
     width: 100%;
     height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.secondConentFirst {
+    margin-top: 122px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.secondConentFirstTitle {
+    color: var(--fontSecondaryColor);
+    font-size: 6rem;
+    text-shadow: 4px 4px 10px #000;
+}
+
+.secondConentFirstSubtitle {
+    color: var(--fontSecondaryColor);
+    margin-right: 8em;
+    font-size: 1.5em;
+    text-shadow: 4px 4px 10px #000;
+}
+
+.secondConentSecond {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding-right: 2em;
+    font-size: 1em;
+}
+
+.contentDrag {
+    display: flex;
+    align-items: center;
+}
+
+.secondConentSecondIcon {
+    color: var(--fontSecondaryColor);
+    font-size: 2em;
+}
+
+.secondConentSecondLink {
+    text-decoration: none;
+    color: var(--fontSecondaryColor);
+}
+
+.secondConentSecondLink:hover {
+    text-decoration: underline;
+    color: var(--fontSecondaryColor);
 }
