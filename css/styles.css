@@ -199,3 +199,28 @@ body {
 .secSobre {
     margin-top: 3em;
 }
+
+.cardPrincipios .card {
+    margin-top: 2em;
+}
+
+.cardPrincipios .card-body {
+    margin: 1em;
+    height: 8em;
+}
+
+.cardPrincipios h5 {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .cardPrincipios .card {
+        margin-top: 0;
+    }
+}
+
+.secLanchas {
+    margin-top: 3em;
+
+
+}
