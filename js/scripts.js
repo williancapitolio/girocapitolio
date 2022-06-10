@@ -1,6 +1,6 @@
 /* colocar um x quando clica nos itens da navbar */
 const hamburgerMenu = document.querySelector('.hamburgerMenu'); // pegando a classe .hamburgerMenu
-//const header = document.querySelector('.header'); // pegando a classe header
+const header = document.querySelector('header'); // pegando a classe header
 const navMenu = document.querySelector('.navMenu');
 
 hamburgerMenu.addEventListener("click", () => { //quando há um clique
@@ -8,7 +8,7 @@ hamburgerMenu.addEventListener("click", () => { //quando há um clique
         ? hamburgerMenu.classList.replace("bi-list", "bi-x") //troque o bi-list por um bi-x
         : hamburgerMenu.classList.replace("bi-x", "bi-list"); //se não troque o bi-x por um bi-list
     navMenu.classList.toggle("active");
-    //header.classList.toggle("menuNavActive"); //adicionando a classe no header
+    header.classList.toggle("menuNavActive"); //adicionando a classe no header
 });
 
 document.querySelectorAll(".navLink").forEach(n => n.addEventListener("click", () => {

@@ -74,9 +74,12 @@ body {
     transition: 0.5s;
 }
 
+.menuNavActive {
+    overflow: hidden;
+}
+
 .navMenu.active {
     left: 0;
-    overflow: hidden;
     padding: 0;
     margin: 0;
 }
@@ -140,15 +143,16 @@ body {
 
 .secondConentFirstTitle {
     color: var(--fontSecondaryColor);
-    font-size: 6rem;
-    text-shadow: 4px 4px 10px #000;
+    font-size: 2.5em;
+    font-weight: 700;
+    text-shadow: 4px 4px 10px var(--fontPrimaryColor);
 }
 
 .secondConentFirstSubtitle {
     color: var(--fontSecondaryColor);
-    margin-right: 8em;
-    font-size: 1.5em;
-    text-shadow: 4px 4px 10px #000;
+    font-size: 1.1em;
+    font-weight: 700;
+    text-shadow: 4px 4px 10px var(--fontPrimaryColor);
 }
 
 .secondConentSecond {
@@ -167,16 +171,31 @@ body {
 .secondConentSecondIcon {
     color: var(--fontSecondaryColor);
     font-size: 2em;
-    text-shadow: 4px 4px 10px #000;
+    text-shadow: 4px 4px 10px var(--fontPrimaryColor);
 }
 
 .secondConentSecondLink {
     text-decoration: none;
     color: var(--fontSecondaryColor);
-    text-shadow: 4px 4px 10px #000;
+    font-weight: 700;
+    text-shadow: 4px 4px 10px var(--fontPrimaryColor);
 }
 
 .secondConentSecondLink:hover {
     text-decoration: underline;
     color: var(--fontSecondaryColor);
+}
+
+@media (min-width: 768px) {
+    .secondConentFirstTitle {
+        font-size: 4em;
+    }
+
+    .secondConentFirstSubtitle {
+        font-size: 1.75em;
+    }
+}
+
+.secSobre {
+    margin-top: 3em;
 }
