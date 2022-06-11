@@ -269,3 +269,10 @@ body {
 
 
 }
+
+.cardsLanchas {
+}
+
+.cardsLanchas .card {
+    width: 75%;
+}
