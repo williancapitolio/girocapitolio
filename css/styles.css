@@ -200,13 +200,50 @@ body {
     margin-top: 3em;
 }
 
+.secSobre .imgDono {
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.imgDuas {
+    margin: 0;
+    padding: 0;
+}
+
+.secSobre .imgCostas,
+.secSobre .imgLonge {
+    width: 480px;
+    margin-top: 1em;
+}
+
+.secSobre .imgLonge {
+    margin-bottom: 1em;
+}
+
+.cardPrincipios {
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
 .cardPrincipios .card {
     margin-top: 2em;
+    background-color: var(--bgPrimaryColor);
 }
 
 .cardPrincipios .card-body {
     margin: 1em;
     height: 8em;
+}
+
+.cardPrincipios i {
+    font-size: 3em;
+    margin-top: -0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bgPrimaryColor);
 }
 
 .cardPrincipios h5 {
@@ -216,6 +253,13 @@ body {
 @media (min-width: 768px) {
     .cardPrincipios .card {
         margin-top: 0;
+        height: 18em;
+    }
+}
+
+@media (min-width: 1024px) {
+    .cardPrincipios .card {
+        height: 12em;
     }
 }
 
