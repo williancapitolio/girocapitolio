@@ -336,21 +336,25 @@ footer a:hover {
     transition: 1s;
 }
 
+/* vem de baixo pra cima */
 [data-anime="down"] {
     transform: translate3d(0, -100%, 0);
     
 }
 
+/* vem de cima pra baixo */
 [data-anime="up"] {
     transform: translate3d(0, 100%, 0);
     
 }
 
+/* vem da esquerda pra direita */
 [data-anime="left"] {
     transform: translate3d(-100%, 0, 0);
     
 }
 
+/* vem da direita pra esquerda */
 [data-anime="right"] {
     transform: translate3d(50px, 0, 0);
     
