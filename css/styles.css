@@ -294,3 +294,69 @@ body {
     border-right: 2px solid;
 }
 */
+
+.secContato .card .card-body i{
+font-weight: 900;
+}
+
+.secContato .card .card-body a {
+    text-decoration: none;
+    color: var(--fontPrimaryColor);
+}
+
+.secContato .card .card-body a:hover {
+    text-decoration: underline;
+    color: var(--fontPrimaryColor);
+}
+
+footer {
+    background-color: var(--bgDark);
+    margin-top: 4em;
+    text-align: center;
+    justify-content: center;
+}
+
+footer .copyFooter {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--fontSecondaryColor);
+    width: 100%;
+}
+
+footer a:hover {
+    color: var(--fontTertiaryColor);
+}
+
+[data-anime] {
+    opacity: 0;
+    transition: 1s;
+}
+
+[data-anime="down"] {
+    transform: translate3d(0, -100%, 0);
+    
+}
+
+[data-anime="up"] {
+    transform: translate3d(0, 100%, 0);
+    
+}
+
+[data-anime="left"] {
+    transform: translate3d(-100%, 0, 0);
+    
+}
+
+[data-anime="right"] {
+    transform: translate3d(50px, 0, 0);
+    
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
