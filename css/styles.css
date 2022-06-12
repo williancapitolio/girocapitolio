@@ -270,9 +270,27 @@ body {
 
 }
 
-.cardsLanchas {
+.cardsLanchas .card {
+    width: 80%;
+    margin: auto;
 }
 
-.cardsLanchas .card {
-    width: 75%;
+.cardsPasseios {
+    width: 80%;
+    margin: auto;
 }
+
+.direitaPasseios {
+    flex-direction: row;
+}
+
+/*
+.esquerdaPasseios {
+    border-right: 2px solid;
+}
+
+
+.direitaPasseios {
+    border-right: 2px solid;
+}
+*/
