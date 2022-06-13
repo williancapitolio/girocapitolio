@@ -18,3 +18,24 @@ document.querySelectorAll(".navLink").forEach(n => n.addEventListener("click", (
     //if (document.querySelector("menuNavActive"))
     //body.classList.toggle("menuNavActive"); //remove a classe no body
 }));
+
+//animações
+const item = document.querySelectorAll("[data-anime"); //pegando o atributo data anime
+
+const animeScroll = () => {
+    const windowTop = window.pageYOffset + window.innerHeight * 0.85;
+
+    item.forEach((element) => {
+        if (windowTop > element.offsetTop) {
+            element.classList.add("animate");
+        } else {
+            element.classList.remove("animate")
+        }
+    });
+};
+
+animeScroll();
+
+window.addEventListener("scroll" , () => {
+    animeScroll();
+});
