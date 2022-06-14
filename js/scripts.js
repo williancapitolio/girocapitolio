@@ -41,7 +41,7 @@ window.addEventListener("scroll" , () => {
 });
 
 /* criou constante para selecionar css da navbar da tag a onde existe um '#', excluindo links externos */
-const menuLinks = document.querySelectorAll('.navbar a[href^="#"]');
+const menuLinks = document.querySelectorAll('.navbar a[href^="#"], .secondConentSecondLink[href^="#"]');
 
 function getDistanceFromTheTop(element) {
     const id = element.getAttribute("href");
