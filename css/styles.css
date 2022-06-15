@@ -18,6 +18,47 @@ body {
     background-color: var(--bgPrimaryColor);
 }
 
+[data-anime] {
+    opacity: 0;
+    transition: 1s;
+}
+
+/* vem de baixo pra cima */
+[data-anime="down"] {
+    transform: translate3d(0, -100%, 0);
+
+}
+
+/* vem de cima pra baixo */
+[data-anime="up"] {
+    transform: translate3d(0, 100%, 0);
+
+}
+
+/* vem da esquerda pra direita */
+[data-anime="left"] {
+    transform: translate3d(-100%, 0, 0);
+
+}
+
+/* vem da direita pra esquerda */
+[data-anime="right"] {
+    transform: translate3d(50px, 0, 0);
+
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+@media (max-width: 820px) {
+    [data-anime="right"] {
+        transform: translate3d(0, 100%, 0);
+
+    }
+}
+
 .navbar {
     min-height: 122px;
     display: flex;
@@ -296,9 +337,29 @@ body {
 }
 */
 
+.dadosPasseios {
+    margin: auto;
+    padding: 1em;
+    text-align: center;
+    justify-content: center;
+}
+
 @media (max-width: 768px) {
     .cardsPasseios {
-        margin-bottom: 2em;
+        margin-bottom: 1em;
+        display: grid;
+    }
+
+    .dadosPasseios {
+        margin-top: 2em;
+        margin-bottom: 0;
+        padding: 0;
+        padding-bottom: 1em;
+        grid-row-start: 2;
+    }
+
+    .fotosPasseios {
+        grid-row-end: 1;
     }
 }
 
@@ -336,45 +397,4 @@ footer a {
 
 footer a:hover {
     color: var(--fontTertiaryColor);
-}
-
-[data-anime] {
-    opacity: 0;
-    transition: 1s;
-}
-
-/* vem de baixo pra cima */
-[data-anime="down"] {
-    transform: translate3d(0, -100%, 0);
-
-}
-
-/* vem de cima pra baixo */
-[data-anime="up"] {
-    transform: translate3d(0, 100%, 0);
-
-}
-
-/* vem da esquerda pra direita */
-[data-anime="left"] {
-    transform: translate3d(-100%, 0, 0);
-
-}
-
-/* vem da direita pra esquerda */
-[data-anime="right"] {
-    transform: translate3d(50px, 0, 0);
-
-}
-
-[data-anime].animate {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-}
-
-@media (max-width: 820px) {
-    [data-anime="right"] {
-        transform: translate3d(0, 100%, 0);
-
-    }
 }
