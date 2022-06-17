@@ -175,6 +175,14 @@ body {
     padding: 0;
 }
 
+@media (max-width: 768px) {
+    .firstContent {
+        background-attachment: scroll;
+    }
+}
+
+/* background-attachment: fixed */
+
 .secondConentFirst {
     margin-top: 122px;
     display: flex;
@@ -235,6 +243,12 @@ body {
 
     .secondConentFirstSubtitle {
         font-size: 1.75em;
+    }
+}
+
+@media (max-width: 480px) {
+    .secondConentFirstSubtitle {
+        font-size: 1em;
     }
 }
 
